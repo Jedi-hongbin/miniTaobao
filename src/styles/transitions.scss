@@ -1,0 +1,26 @@
+// 过渡动画
+
+// 显隐
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
+.fade-enter-active, .fade-leave-active{
+  transition: opacity 0.2s;
+}
+.fade-enter-to, .fade-leave{
+  
+}
+
+
+.fadeMove-enter, .fadeMove-leave-to{
+  opacity: 0;
+  transform: translateX(-10%);
+}
+.fadeMove-enter-active, .fadeMove-leave-active{
+  transition: all 0.3s;
+  width: 100%;
+  position: fixed;
+}
+.fadeMove-enter-to, .fadeMove-leave{
+  
+}

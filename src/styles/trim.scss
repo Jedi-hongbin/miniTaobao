@@ -1,0 +1,125 @@
+// 强制覆盖ui框架的样式
+.el-tabs__item.is-active {
+  color: #fa8f03;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.el-tabs__active-bar {
+  display: none;
+}
+
+.el-tabs {
+  .el-tabs__header {
+    overflow: auto;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    margin-left: 10px;
+    scrollbar-width: none;
+  }
+
+  .el-tabs__nav-wrap {
+    width: 150%;
+    overflow: hidden;
+    margin-bottom: -1px;
+    position: relative;
+  }
+
+  .el-tabs__nav-wrap::after {
+    display: none;
+  }
+}
+
+.el-input {
+  overflow: hidden;
+  // max-width: 50% !important;
+  height: 75%;
+  display: flex;
+  align-items: center;
+
+  i {
+    transform: translateY(-8%);
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+}
+
+.el-input__inner:hover {
+  border: none;
+}
+
+.el-input__inner:focus {
+  border: none;
+}
+
+.el-carousel__indicator {
+  .el-carousel__button {
+    display: block;
+    opacity: 0.48;
+    width: 8px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+}
+
+
+
+.el-menu-item {
+  line-height: 45px !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  background-color: transparent;
+}
+
+.is-active {
+  color: #fa8f03 !important;
+}
+
+.el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
+.el-menu--horizontal>.el-menu-item:not(.is-disabled):focus {
+  background-color: transparent !important;
+}
+
+.el-message {
+  min-width: 90vw !important;
+}
+
+.el-dialog {
+  position: relative;
+  margin: 0 auto 50px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 70% !important;
+  margin-top: 30vh!important;
+
+  .el-dialog__footer {
+    padding: 5px !important;
+    padding-top: 10px;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .el-dialog__body {
+    padding: 10px 20px;
+    color: #606266;
+    font-size: 14px;
+    word-break: break-all;
+  }
+}

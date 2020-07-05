@@ -1,0 +1,55 @@
+// 全局样式，请以com-开头
+
+// 输入框
+.com-input-container{
+  display: flex;
+
+  > input, textarea{
+    flex: 1;
+    height: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    color: inherit;
+    text-align: inherit;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+// fixed绝对居中
+.com-ab-center{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 模态框
+.com-modal{
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+}
+
+// 遮罩
+.com-mask{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+// 要在遮罩之上显示的内容
+.com-onMask{
+  z-index: 101;
+}

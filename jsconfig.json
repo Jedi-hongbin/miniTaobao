@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "webworker"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@c/*": ["components/*"],
+      "@l/*": ["layout/*"],
+      "@v/*": ["views/*"],
+      "@u/*": ["utils/*"],
+      "@img/*": ["assets/images/*"]
+    },
+    "target": "es5",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

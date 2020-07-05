@@ -1,0 +1,115 @@
+// 弹性布局
+
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.flex-row{
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.flex-row-inline{
+  @extend .flex-row;
+  display: inline-flex;
+}
+
+.flex-column{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.flex-column-inline{
+  @extend .flex-column;
+  display: inline-flex;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-cross-center{
+  align-items: center;
+}
+
+.flex-main-center{
+  justify-content: center;
+}
+
+.flex-around{
+  justify-content: space-around;
+}
+
+.flex-between{
+  justify-content: space-between;
+}
+
+.flex-children-center{
+  align-content: center;
+}
+
+.flex-children-around{
+  align-content: space-around;
+}
+
+.flex-children-between{
+  align-content: space-between;
+}
+
+.flex-grow{
+  flex: 1;
+}
+
+.flex-grow-2{
+  flex: 2;
+}
+
+.flex-grow-3{
+  flex: 3;
+}
+
+.flex-grow-4{
+  flex: 4;
+}
+
+.flex-grow-5{
+  flex: 5;
+}
+
+.flex-grow-limit{
+  flex: 1;
+  overflow: hidden;
+}
+
+.flex-grow-2-limit{
+  flex: 2;
+  overflow: hidden;
+}
+
+.flex-grow-3-limit{
+  flex: 3;
+  overflow: hidden;
+}
+
+.flex-shrink{
+  flex-shrink: 1;
+}
+
+.flex-oneline{
+  flex-basis: 100%;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-scroll{
+  overflow: auto;
+}
